@@ -1,0 +1,97 @@
+/* line 14, ../sass/foundation-overrides.scss */
+body {
+  font-family: Helvetica Neue, Helvetica, Arial, sanserif;
+}
+
+/* line 17, ../sass/foundation-overrides.scss */
+h1 {
+  margin: 2rem 20px 2rem 20px;
+  font-size: 4rem;
+  line-height: 4rem;
+  font-weight: 300;
+}
+
+/* line 24, ../sass/foundation-overrides.scss */
+h2 {
+  margin: auto 20px 2rem 20px;
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: 300;
+}
+
+/* line 30, ../sass/foundation-overrides.scss */
+h2 > h2 {
+  margin-top: 0;
+}
+
+/* line 31, ../sass/foundation-overrides.scss */
+li {
+  float: left;
+  margin: 20px;
+  list-style: none;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  box-shadow: 0 0 24px #cccccc;
+  background-color: #fafafa;
+}
+/* line 41, ../sass/foundation-overrides.scss */
+li:hover {
+  transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  /* IE 9 */
+  -webkit-transform: scale(1.1);
+  /* Safari and Chrome */
+  visibility: inline;
+}
+/* line 46, ../sass/foundation-overrides.scss */
+li:hover dt, li:hover dd {
+  color: #191919;
+}
+/* line 47, ../sass/foundation-overrides.scss */
+li:hover a {
+  color: white;
+}
+/* line 49, ../sass/foundation-overrides.scss */
+li dl {
+  margin-bottom: 0.75rem;
+}
+/* line 50, ../sass/foundation-overrides.scss */
+li a {
+  width: 153px;
+  height: 153px;
+  display: block;
+  text-transform: uppercase;
+  font-weight: 200;
+  letter-spacing: 0.13rem;
+  margin-bottom: 0.75rem;
+}
+/* line 60, ../sass/foundation-overrides.scss */
+li dt {
+  margin: 0 0.75rem 0 0.75rem;
+  padding: 0;
+  line-height: 1rem;
+  color: #fafafa;
+  font-size: 1rem;
+}
+/* line 64, ../sass/foundation-overrides.scss */
+li dd {
+  margin: 0 0.75rem 0 0.75rem;
+  padding: 0;
+  line-height: 1rem;
+  color: #fafafa;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  margin-top: 0.1rem;
+}
+/* line 70, ../sass/foundation-overrides.scss */
+li a {
+  line-height: 153px;
+  text-align: center;
+  color: transparent;
+}
+/* line 74, ../sass/foundation-overrides.scss */
+li a:hover {
+  text-decoration: none;
+}
