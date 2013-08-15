@@ -1,0 +1,76 @@
+// Variables
+$swatch-color: rgb(25,25,25);
+$swatch-text-pad: 0.75rem;
+
+// Mixins
+@mixin text-vars {
+  margin: 0 $swatch-text-pad 0 0.75rem;
+  padding: 0;
+  line-height: 1rem;
+  color: white;
+}
+
+// SASS
+body {
+  font-family: Helvetica Neue, Helvetica, Arial, sanserif;
+}
+h1 {
+  //text-align: center;
+  margin: 2rem 20px 2rem 20px;
+  font-size: 4rem;
+  line-height: 4rem;
+  font-weight: 300;
+}
+h2 {
+  margin: auto 20px 2rem 20px;
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: 300;
+}
+h2 > h2 {margin-top:0}
+li {
+  float: left;
+  margin: 20px;
+  list-style: none;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  box-shadow: 0 0 24px lighten($swatch-color, 70%);
+  background-color: rgb(250,250,250);
+  &:hover {
+    transform: scale(1.1);
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari and Chrome */
+    visibility: inline;
+    dt, dd {color:$swatch-color;}
+    a {color:white;}
+  }
+  dl {margin-bottom: $swatch-text-pad;} 
+    a {
+    width: 153px;
+    height: 153px;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 200;
+    letter-spacing: 0.13rem;
+    margin-bottom: $swatch-text-pad;
+
+  }
+  dt {
+    @include text-vars;
+    font-size: 1rem;
+  }
+  dd {
+    @include text-vars;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    margin-top: 0.1rem;
+  }
+  a {
+    line-height: 153px;
+    text-align: center;
+    color: transparent;
+     &:hover {text-decoration: none;}
+  }
+}
